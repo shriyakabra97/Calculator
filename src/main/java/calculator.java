@@ -20,13 +20,13 @@ public class calculator{
                     System.out.println("Result = " + res);
                     break;
 
-                case '2':
-                    System.out.println("Enter two numbers :");
-                    a = sc.nextFloat();
-                    b = sc.nextFloat();
-                    res = a*b ;
-                    System.out.println("Result = " + res);
-                    break;
+//                case '2':
+//                    System.out.println("Enter two numbers :");
+//                    a = sc.nextFloat();
+//                    b = sc.nextFloat();
+//                    res = a*b ;
+//                    System.out.println("Result = " + res);
+//                    break;
 
                 case '3' :
                     System.exit(0);
