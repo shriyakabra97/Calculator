@@ -6,10 +6,7 @@ public class calculator{
     char choice, ch ;
     Scanner sc = new Scanner(System.in);
 
-    public float add(){
-        System.out.println("Enter two numbers :");
-        a = sc.nextFloat();
-        b = sc.nextFloat();
+    public float add(float a,float b){
         res = a+b ;
         return res;
     }
@@ -64,7 +61,10 @@ public class calculator{
             c.choice = c.sc.next().charAt(0);
             switch(c.choice){
                 case '1' :
-                    float sol = c.add();
+                    System.out.println("Enter two numbers :");
+                    c.a = c.sc.nextFloat();
+                    c.b = c.sc.nextFloat();
+                    float sol = c.add(c.a,c.b);
                     System.out.println("Result = " + sol);
                     break;
 
