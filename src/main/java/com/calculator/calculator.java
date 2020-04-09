@@ -59,7 +59,7 @@ public class calculator{
             System.out.println("6. EXIT");
             System.out.println("Enter your choice");
             //c.choice = c.sc.next().charAt(0);
-            c.choice = 6 ;
+            c.choice = '1';
             switch(c.choice){
                 case '1' :
                     System.out.println("Enter two numbers :");
@@ -91,7 +91,9 @@ public class calculator{
                     System.exit(0);
                     break;
 
-
+                default :
+                    System.out.println("INVALID CHOICE!!");
+                    break;
 
             }
             System.out.println("----------------------------------------");
