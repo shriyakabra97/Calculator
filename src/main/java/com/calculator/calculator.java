@@ -91,9 +91,7 @@ public class calculator{
                     System.exit(0);
                     break;
 
-                default :
-                    System.out.println("INVALID CHOICE!!");
-                    break;
+
 
             }
             System.out.println("----------------------------------------");
