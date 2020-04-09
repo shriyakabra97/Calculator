@@ -47,7 +47,7 @@ public class calculator{
 //        return res;
 //    }
 
-    public static void main(String args[]){
+    public static void main(String args[]) throws  Exception{
         calculator c = new calculator();
 
         do{
