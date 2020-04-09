@@ -50,7 +50,7 @@ public class calculator{
     public static void main(String args[]) throws  Exception{
         calculator c = new calculator();
 
-        do{
+
             System.out.println("1. ADD TWO Numbers");
             //System.out.println("2. SUBTRACT TWO Numbers");
             //System.out.println("3. MULTIPLY TWO Numbers");
@@ -58,14 +58,18 @@ public class calculator{
             //System.out.println("5. MODULUS OF TWO Numbers ");
             System.out.println("6. EXIT");
             System.out.println("Enter your choice");
-            c.choice = c.sc.next().charAt(0);
+            //c.choice = c.sc.next().charAt(0);
+            c.choice = 1 ;
             switch(c.choice){
                 case '1' :
                     System.out.println("Enter two numbers :");
-                    c.a = c.sc.nextFloat();
-                    c.b = c.sc.nextFloat();
+                    c.a = 10 ;
+                    c.b = 20 ;
+//                    c.a = c.sc.nextFloat();
+//                    c.b = c.sc.nextFloat();
                     float sol = c.add(c.a,c.b);
                     System.out.println("Result = " + sol);
+
                     break;
 
 //                case '2' :
@@ -94,7 +98,7 @@ public class calculator{
 
             }
             System.out.println("----------------------------------------");
-        }while(c.choice!=6);
+
     }
 
 
