@@ -59,7 +59,7 @@ public class calculator{
             System.out.println("6. EXIT");
             System.out.println("Enter your choice");
             //c.choice = c.sc.next().charAt(0);
-            c.choice = 1 ;
+            c.choice = 6 ;
             switch(c.choice){
                 case '1' :
                     System.out.println("Enter two numbers :");
@@ -69,7 +69,6 @@ public class calculator{
 //                    c.b = c.sc.nextFloat();
                     float sol = c.add(c.a,c.b);
                     System.out.println("Result = " + sol);
-
                     break;
 
 //                case '2' :
