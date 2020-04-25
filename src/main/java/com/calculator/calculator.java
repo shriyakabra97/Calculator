@@ -50,7 +50,7 @@ public class calculator{
     public static void main(String args[]) throws  Exception{
         calculator c = new calculator();
 
-
+            System.out.println("----------------------------MY CALC---------------------------------");
             System.out.println("1. ADD TWO Numbers");
             //System.out.println("2. SUBTRACT TWO Numbers");
             //System.out.println("3. MULTIPLY TWO Numbers");
