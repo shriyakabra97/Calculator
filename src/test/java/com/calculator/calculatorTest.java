@@ -5,6 +5,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.IOException;
+
 import static org.junit.Assert.*;
 
 public class calculatorTest {
@@ -23,8 +25,13 @@ private calculator ca ;
             float a = 12;
             float b = -10;
             float expected_res = 2;
-            float res = ca.add(a, b);
-            Assert.assertEquals(expected_res, res, 0.0);
+            try {
+                float res = ca.add(a, b);
+                Assert.assertEquals(expected_res, res, 0.0);
+            }catch (IOException ex){
+                ex.printStackTrace();
+            }
+
     }
 
     @Test

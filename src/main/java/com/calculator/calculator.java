@@ -1,13 +1,29 @@
 package com.calculator;
 
+import java.io.*;
 import java.util.Scanner;
 public class calculator{
     float a, b, res ;
     char choice, ch ;
     Scanner sc = new Scanner(System.in);
 
-    public float add(float a,float b){
+    public float add(float a,float b) throws IOException{
         res = a+b ;
+        System.out.println("add");
+//        BufferedWriter writer = new BufferedWriter(new FileWriter("/home/shriya/calc_logs.txt"));
+//        writer.append("add\n");
+//        //writer.write("add \n");
+//        writer.close();
+
+        File file = new File("/home/shriya/calc_logs.txt");
+        if(!file.exists()){
+            file.createNewFile();
+        }
+        FileWriter fw = new FileWriter(file,true);
+        BufferedWriter bw = new BufferedWriter(fw);
+        bw.write("add \n");
+        bw.close();
+
         return res;
     }
 
