@@ -15,7 +15,7 @@ public class calculator{
 //        //writer.write("add \n");
 //        writer.close();
 
-        File file = new File("/home/shriya/calc_logs/calc_logs.txt");
+        File file = new File("/data/calc_logs.txt");
         if(!file.exists()){
             file.createNewFile();
         }
