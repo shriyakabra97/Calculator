@@ -35,6 +35,20 @@ private calculator ca ;
     }
 
     @Test
+    public void subtract() {
+        float a = 10;
+        float b = -10;
+        float expected_res = 0;
+        try {
+            float res = ca.subtract(a, b);
+            Assert.assertEquals(expected_res, res, 0.0);
+        }catch (IOException ex){
+            ex.printStackTrace();
+        }
+
+    }
+
+    @Test
     public void main() {
     }
 }
