@@ -63,6 +63,34 @@ private calculator ca ;
     }
 
     @Test
+    public void divide() {
+        float a = 100;
+        float b = -10;
+        float expected_res = -10;
+        try {
+            float res = ca.divide(a, b);
+            Assert.assertEquals(expected_res, res, 0.0);
+        }catch (IOException ex){
+            ex.printStackTrace();
+        }
+
+    }
+
+    @Test
+    public void modulus() {
+        float a = 23;
+        float b = 4;
+        float expected_res = 3;
+        try {
+            float res = ca.modulus(a, b);
+            Assert.assertEquals(expected_res, res, 0.0);
+        }catch (IOException ex){
+            ex.printStackTrace();
+        }
+
+    }
+
+    @Test
     public void main() {
     }
 }
