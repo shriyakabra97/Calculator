@@ -38,7 +38,7 @@ private calculator ca ;
     public void subtract() {
         float a = 10;
         float b = -10;
-        float expected_res = 0;
+        float expected_res = 20;
         try {
             float res = ca.subtract(a, b);
             Assert.assertEquals(expected_res, res, 0.0);
