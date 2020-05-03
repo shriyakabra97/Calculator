@@ -21,7 +21,7 @@ public class calculator{
         return res;
     }
 
-    public float multiply(float a, float b){
+    public float multiply (float a, float b) throws IOException{
 
         res = a*b ;
         System.out.println("Multiply");

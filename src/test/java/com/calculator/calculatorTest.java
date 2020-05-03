@@ -49,6 +49,20 @@ private calculator ca ;
     }
 
     @Test
+    public void multiply() {
+        float a = 10;
+        float b = -10;
+        float expected_res = -100;
+        try {
+            float res = ca.multiply(a, b);
+            Assert.assertEquals(expected_res, res, 0.0);
+        }catch (IOException ex){
+            ex.printStackTrace();
+        }
+
+    }
+
+    @Test
     public void main() {
     }
 }
